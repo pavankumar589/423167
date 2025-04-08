@@ -1,0 +1,95 @@
+1. Shell program to check if a number is even or odd:
+#!/bin/bash
+echo "Enter a number:"
+read num
+
+if [ $((num % 2)) -eq 0 ]; then
+  echo "$num is even"
+else
+  echo "$num is odd"
+fi
+
+Sample Output:
+Enter a number: 7
+7 is odd
+
+
+2. Shell program to check if a year is a leap year:
+#!/bin/bash
+echo "Enter a year:"
+read year
+
+if (( (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) )); then
+  echo "$year is a leap year"
+else
+  echo "$year is not a leap year"
+fi
+
+Sample Output:
+Enter a year: 2024
+2024 is a leap year
+
+
+3. Shell program to find the factorial of a number:
+#!/bin/bash
+echo "Enter a number:"
+read num
+fact=1
+
+for ((i=1; i<=num; i++)); do
+  fact=$((fact * i))
+done
+
+echo "Factorial of $num is $fact"
+
+Sample Output:
+Enter a number: 5
+Factorial of 5 is 120
+
+
+4. Shell program to swap two integers:
+#!/bin/bash
+echo "Enter first number:"
+read a
+echo "Enter second number:"
+read b
+
+echo "Before swap: a=$a, b=$b"
+temp=$a
+a=$b
+b=$temp
+echo "After swap: a=$a, b=$b"
+
+Sample Output:
+Enter first number: 3
+Enter second number: 5
+Before swap: a=3, b=5
+After swap: a=5, b=3
+
+
+5. Shell program to compute GCD and LCM of two numbers:
+#!/bin/bash
+echo "Enter two numbers:"
+read a
+read b
+
+x=$a
+y=$b
+
+while [ $b -ne 0 ]; do
+  r=$((a % b))
+  a=$b
+  b=$r
+done
+
+gcd=$a
+lcm=$(( (x * y) / gcd ))
+
+echo "GCD is $gcd"
+echo "LCM is $lcm"
+
+Sample Output:
+Enter two numbers: 12 18
+GCD is 6
+LCM is 36
+

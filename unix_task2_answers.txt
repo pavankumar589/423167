@@ -1,0 +1,39 @@
+
+1. List all files in the current directory that start with the letter a:
+Command:
+ls a*
+
+Sample Output:
+apple.txt  archive.tar  a_script.sh
+
+
+2. List all files in the current directory with a .txt extension:
+Command:
+ls *.txt
+
+Sample Output:
+notes.txt  report.txt  data.txt
+
+
+3. Find all files in the current directory whose names have exactly five characters:
+Command:
+ls ?????
+
+Sample Output:
+alpha  notes  data1
+
+
+4. List files in the current directory that start with any letter between b and e:
+Command:
+ls [b-e]*
+
+Sample Output:
+beta.txt  config.log  data.csv  echo.sh
+
+
+5. List files in the current directory ending with .log, where the second character is a number (e.g., a1.log):
+Command:
+ls ?[0-9].log
+
+Sample Output:
+a1.log  b2.log  z3.log

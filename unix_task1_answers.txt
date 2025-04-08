@@ -1,0 +1,75 @@
+
+1. To print the name of operating system:
+Command:
+uname
+
+Sample Output:
+Linux
+
+2. To print the login name:
+Command:
+whoami
+
+Sample Output:
+student
+
+3. To print the host name:
+Command:
+hostname
+
+Sample Output:
+student-PC
+
+4. Display the calendar for:
+(i) Jan 2024:
+Command:
+cal 01 2024
+
+Sample Output:
+    January 2024
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+
+(ii) Feb 1995:
+Command:
+cal 02 1995
+
+Sample Output:
+   February 1995
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28
+
+(iii) 9th month of the year 7 A.D:
+Command:
+cal 09 7
+
+Sample Output:
+   September 7
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30
+
+(iv) For the current month:
+Command:
+cal
+
+(Sample output varies depending on current month)
+
+(v) Current Date Day Abbreviation, Month Abbreviation along with year:
+Command:
+date "+%a, %b %Y"
+
+Sample Output:
+Mon, Apr 2025

@@ -1,0 +1,15 @@
+
+1. Create a directory:
+mkdir my_directory
+
+2. Create a subdirectory in the directory created:
+mkdir my_directory/my_subdirectory
+
+3. Change your current directory to the subdirectory:
+cd my_directory/my_subdirectory
+
+4. Display the calendar for the current month:
+cal
+
+5. Get a directory listing of the parent directory:
+ls ..
